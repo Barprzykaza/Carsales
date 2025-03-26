@@ -1,0 +1,152 @@
+@charset "UTF-8";
+.post .underline {
+  margin-top: 10px;
+  width: 60%;
+  height: 1px;
+  background-color: #b8bac0;
+  margin-left: 0; /* Ustawia element z lewej strony */
+}
+.post .photo {
+  width: 60%;
+  height: 400px;
+}
+.post .photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #ddd; /* Kolor tła, gdy obrazek jest węższy */
+}
+.post .seller {
+  width: 30%;
+  height: 200px;
+  padding: 10px;
+}
+.post .seller .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.post .seller .condition {
+  font-size: 15px;
+  color: #66676C;
+}
+.post .seller .price {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  color: red;
+}
+.post .seller .price .currency {
+  font-size: 20px;
+}
+.post .seller .sellerInfo {
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.post .seller .sellerInfo .sellerName {
+  font-size: 25px;
+  font-weight: bold;
+}
+.post .seller .sellerInfo .sellerNumber {
+  margin-top: 20px;
+  color: blue;
+}
+.post .seller .sellerInfo .sellerNumber i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #000000;
+}
+.post .seller .sellerInfo .sellerTown {
+  margin-top: 30px;
+}
+.post .detailSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.post .detailSection p {
+  margin-left: 20px;
+  width: 110px;
+}
+.post .detailSection .detailIcons, .post .detailSection .detailTitle, .post .detailSection .detailLabel {
+  display: flex;
+  flex-direction: row;
+}
+.post .detailSection .detailIcons .fa-solid {
+  font-size: 30px;
+}
+.post .detailSection .detailTitle {
+  font-size: 12px;
+}
+.post .detailSection .detailLabel {
+  margin-top: -10px;
+  font-size: 20px;
+}
+.post .descriptionSection {
+  width: 60%;
+  margin-top: -20px;
+}
+.post .descriptionSection .postTime {
+  font-size: 15px;
+  color: #66676C;
+}
+.post .headingDetail {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  width: 82%;
+}
+.post .headingDetail:hover {
+  cursor: pointer;
+  color: blue;
+}
+.post .heading {
+  font-size: 25px;
+  font-weight: bold;
+}
+.post .detailsSection {
+  width: 75%;
+}
+.post .detailsSection .detailName {
+  width: 30%;
+  color: #66676C;
+}
+.post .detailsSection .col-md-6 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.post .equipment_content .equipmentType {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.post .equipment_content .equipmentType .fa-solid {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.post .equipment_content .equipmentType:hover {
+  cursor: pointer;
+}
+.post .equipment_content .equipmentContainer {
+  border-bottom: 2px solid #000000;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.post .equipment_content .equipmentContainer .fa-solid {
+  font-size: 20px;
+  padding: 8px;
+}
+.post .equipment_content .equipmentContainer .fa-angle-down {
+  transition: transform 0.3s ease;
+}
+.post .equipment_content .equipmentContainer .fa-angle-up {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg); /* Obróci strzałkę o 180 stopni */
+}/*# sourceMappingURL=post.css.map */

@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 72px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ebecf2;
+}
+
+.blue-text {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-title {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+}
+
+nav {
+  z-index: 10;
+  background-color: black;
+  text-transform: uppercase;
+  transition: background-color 0.6s;
+}
+nav i {
+  margin-right: 10px;
+  font-size: 15px;
+}
+nav .navbar-toggler {
+  padding: 10px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .navbar-brand span {
+  font-weight: 10px;
+}
+nav .nav-link, nav .navbar-brand, nav .navbar-nav .nav-link.show, nav .fa-bars {
+  color: #fff;
+}
+nav .nav-link:focus, nav .nav-link:hover, nav .navbar-nav .nav-link.active {
+  color: #039dff;
+}
+
+.head p {
+  font-weight: bold;
+  font-size: 30px;
+}
+.head .back {
+  width: 80%;
+  height: 720px;
+}
+.head .back .post {
+  margin: 10px 0px 0px 20px;
+}
+.head .back .post label {
+  margin-top: 20px;
+  font-family: Geomanist, Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.head .back .post input {
+  background-color: rgb(228, 228, 228);
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 98%;
+  padding: 10px;
+}
+.head .back .post input:focus {
+  outline: none;
+  border-color: red;
+}
+.head .back .post input[type=radio]:checked + label, .head .back .post input[type=checkbox]:checked + label {
+  background-color: #6bb7f3;
+  color: white;
+  border-color: #007bff;
+}
+.head .back .post .description {
+  width: 90%;
+  height: 240px;
+  background-color: #d3d3d3;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+.head .back .post .damaged p, .head .back .post .imported p, .head .back .post .gear p, .head .back .post .choice p {
+  width: 100px;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.head .back .post .damaged label, .head .back .post .imported label, .head .back .post .gear label, .head .back .post .choice label {
+  background-color: white;
+  color: black;
+  width: 200px;
+  margin-left: 10px;
+}
+.head .back .post .informations input {
+  width: 95%;
+}
+.head .back .post .informations .date_registration input {
+  width: 31%;
+}
+.head .back .post .informations .select2, .head .back .post .informations select {
+  background-color: rgb(228, 228, 228);
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 95%;
+  padding: 10px;
+}
+.head .back .post .section p {
+  padding: 20px 0;
+  margin-bottom: -20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.head .back .post .gearType p {
+  margin: 15px 0 -11px 13px;
+  font-size: 18px;
+}
+.head .back .post .gear label {
+  margin-bottom: -25px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .back .post .choice p {
+  width: 220px;
+}
+.head .back .post .filespace input {
+  width: 90%;
+  height: 100px;
+}
+
+.newest .card-group {
+  display: flex;
+}
+.newest .card-group .card {
+  width: 310px;
+  height: 510px;
+  margin-bottom: 10px;
+}
+.newest .card-group .card a {
+  text-decoration: none;
+  color: black;
+}
+.newest .card-group .card img {
+  width: 310px;
+  height: 212px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newest .card-group .card .card-body {
+  width: 290px;
+}
+.newest .card-group .card .card-body .card_title {
+  font-size: 22px;
+  font-weight: bold;
+  height: 70px;
+}
+.newest .card-group .card .card-body .car_price {
+  margin-top: 15px;
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+}
+.newest .card-group .card .card-body .currency {
+  font-size: 20px;
+}
+.newest .card-group .card .card-body .card-place {
+  margin-top: -10px;
+}
+
+@media (max-width: 576px) {
+  .head .back .post .damaged label, .head .back .post .imported label, .head .back .post .choice label {
+    width: 120px;
+  }
+  .head .back .post .gear label {
+    width: 155px;
+  }
+  .head .gearSection {
+    height: 3610px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .head p {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .head .back {
+    width: 100%;
+  }
+  .head .back .post {
+    margin: 10px 0px 0px 20px;
+  }
+  .head .back .post .damaged label, .head .back .post .imported label, .head .back .post .gear label, .head .back .post .choice label {
+    width: 120px;
+  }
+  .head .back .post .description {
+    height: 150px;
+  }
+  .head .back .post .choice p {
+    font-size: 14px;
+    margin-right: -23px;
+  }
+  .head .back .gear label {
+    font-size: 11px;
+  }
+  .head .technicalData {
+    height: 705px !important;
+  }
+  .head .gearSection {
+    height: 2610px !important;
+  }
+  .newest .card-group {
+    display: flex;
+    gap: 30px;
+  }
+  .newest .card-group .card {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  .newest .card-group .card .card-body {
+    width: 250px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .newest .card-group {
+    display: flex;
+  }
+  .newest .card-group .card {
+    width: 230px;
+    margin-bottom: 10px;
+    height: 550px;
+  }
+  .newest .card-group .card .card-body {
+    width: 200px;
+  }
+  .newest .card-group .card .card-body .card_title {
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .head .back .post input {
+    width: 47%;
+  }
+  .head .back .post .description {
+    width: 47%;
+  }
+  .head .back .post .damaged label, .head .back .post .imported label, .head .back .post .gear label, .head .back .post .choice label {
+    width: 190px;
+  }
+  .head .back .post .filespace input {
+    width: 50%;
+    height: 100px;
+  }
+  .head .back .gear label {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,179 @@
+.searchFormSection {
+    margin-top: 100px;
+
+    div {
+        margin-top: 10px;
+    }
+
+    select {
+        border: none;
+        border-bottom: 2px solid #ccc;
+        width: 100px;
+        height: 100px;
+    }
+
+    .select2-container {
+        margin-right: 20px;
+    }
+
+    .select2-container .select2-selection--single {
+        height: 60px !important;
+        border: none;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #66676C;
+        line-height: 60px !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    input {
+        background-color: rgb(228, 228, 228);
+        border: none;
+        width: 190px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    button {
+        width: 120px;
+        height: 40px;
+        background: #0071CE;
+        color: white;
+        letter-spacing: 1px;
+        border: none;
+        margin-top: 19px;
+    }
+
+    button:hover {
+        background-color: blue;
+    }
+}
+
+.searchRow2 {
+    margin-top: 20px;
+}
+
+.searchPlace {
+    margin-top: 20px;
+}
+
+.searchResults {
+    background-color: #fff;
+    margin-top: 50px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .userPosts {
+        position: relative;
+        /* Pozwala na użycie 'absolute' w wewnętrznych elementach */
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+
+        .userPost {
+            img {
+                width: 180px;
+                height: 140px;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .postDate {
+                padding: 10px;
+                width: 500px;
+
+                .postTitle {
+                    width: 50%;
+                    font-weight: bold;
+                    font-size: 22px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .postEnglineinfo {
+                    margin-top: -5px;
+                    font-size: 13px;
+                    color: #66676C;
+
+                }
+
+                .postCarinfo {
+                    margin-top: 10px;
+                    margin-left: -10px;
+                    font-size: 16px;
+
+                    i {
+                        margin-left: 10px;
+                        margin-right: 2px;
+                    }
+                }
+
+                .postPublished,
+                .postPlace {
+                    margin-top: 5px;
+                    font-size: 13px;
+                    color: #66676C;
+                }
+            }
+
+            .postPrice {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-weight: bold;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .searchResults {
+        .userPosts {
+            .userPost {
+                .postDate {
+                    .postTitle {
+                        width: 40%;
+                        font-size: 17px;
+                        margin-top: -5px;
+                    }
+
+                    .postEnglineinfo {
+                        margin-top: 0px;
+                    }
+
+                    .postCarinfo {
+                        font-size: 12px;
+                    }
+                }
+
+                .postPrice {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .searchResults {
+        .userPosts {
+            .userPost {
+                .postDate {
+                    .postTitle {
+                        width: 60%;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
+}

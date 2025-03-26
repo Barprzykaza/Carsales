@@ -1,0 +1,139 @@
+@charset "UTF-8";
+.searchFormSection {
+  margin-top: 100px;
+}
+.searchFormSection div {
+  margin-top: 10px;
+}
+.searchFormSection select {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100px;
+  height: 100px;
+}
+.searchFormSection .select2-container {
+  margin-right: 20px;
+}
+.searchFormSection .select2-container .select2-selection--single {
+  height: 60px !important;
+  border: none;
+}
+.searchFormSection .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #66676C;
+  line-height: 60px !important;
+}
+.searchFormSection .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 60px;
+  margin-right: 20px;
+}
+.searchFormSection input {
+  background-color: rgb(228, 228, 228);
+  border: none;
+  width: 190px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.searchFormSection button {
+  width: 120px;
+  height: 40px;
+  background: #0071CE;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  margin-top: 19px;
+}
+.searchFormSection button:hover {
+  background-color: blue;
+}
+
+.searchRow2 {
+  margin-top: 20px;
+}
+
+.searchPlace {
+  margin-top: 20px;
+}
+
+.searchResults {
+  background-color: #fff;
+  margin-top: 50px;
+}
+.searchResults a {
+  text-decoration: none;
+  color: black;
+}
+.searchResults .userPosts {
+  position: relative;
+  /* Pozwala na użycie 'absolute' w wewnętrznych elementach */
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.searchResults .userPosts .userPost img {
+  width: 180px;
+  height: 140px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.searchResults .userPosts .userPost .postDate {
+  padding: 10px;
+  width: 500px;
+}
+.searchResults .userPosts .userPost .postDate .postTitle {
+  width: 50%;
+  font-weight: bold;
+  font-size: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.searchResults .userPosts .userPost .postDate .postEnglineinfo {
+  margin-top: -5px;
+  font-size: 13px;
+  color: #66676C;
+}
+.searchResults .userPosts .userPost .postDate .postCarinfo {
+  margin-top: 10px;
+  margin-left: -10px;
+  font-size: 16px;
+}
+.searchResults .userPosts .userPost .postDate .postCarinfo i {
+  margin-left: 10px;
+  margin-right: 2px;
+}
+.searchResults .userPosts .userPost .postDate .postPublished,
+.searchResults .userPosts .userPost .postDate .postPlace {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #66676C;
+}
+.searchResults .userPosts .userPost .postPrice {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .searchResults .userPosts .userPost .postDate .postTitle {
+    width: 40%;
+    font-size: 17px;
+    margin-top: -5px;
+  }
+  .searchResults .userPosts .userPost .postDate .postEnglineinfo {
+    margin-top: 0px;
+  }
+  .searchResults .userPosts .userPost .postDate .postCarinfo {
+    font-size: 12px;
+  }
+  .searchResults .userPosts .userPost .postPrice {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .searchResults .userPosts .userPost .postDate .postTitle {
+    width: 60%;
+    font-size: 23px;
+  }
+}/*# sourceMappingURL=searchGoals.css.map */

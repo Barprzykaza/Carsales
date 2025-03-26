@@ -1,0 +1,170 @@
+.post {
+    .underline {
+        margin-top: 10px;
+        width: 60%;
+        height: 1px;
+        background-color: #b8bac0;
+        margin-left: 0; /* Ustawia element z lewej strony */
+    }
+    .photo {
+        width: 60%;
+        height: 400px;
+        img {
+            display: block;
+            width: 100%;
+            height: auto; 
+            max-height: 400px;
+            object-fit: contain; 
+            background-color: #ddd;  /* Kolor tła, gdy obrazek jest węższy */
+        }
+    }
+    .seller {
+        width: 30%;
+        height: 200px;
+        padding: 10px;
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .condition { 
+            font-size: 15px;
+            color: #66676C;
+        }
+        .price { 
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 30px;
+            color: red;
+            .currency {
+                font-size: 20px;
+            }
+        }
+        .sellerInfo {
+            margin-top: 50px;
+            padding: 10px;
+            border: 1px solid #ccc; 
+            border-radius: 10px;
+            .sellerName {
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .sellerNumber {
+                margin-top: 20px;
+                color: blue;
+                i {
+                    font-size: 18px;
+                    margin-right: 10px;
+                    color: #000000;
+                }
+            }
+            .sellerTown {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .detailSection {
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: column;
+        text-align: center;
+        p {
+            margin-left: 20px;
+            width: 110px;
+        }
+
+        .detailIcons, .detailTitle, .detailLabel {
+            display: flex;
+            flex-direction: row; 
+        }
+
+        .detailIcons {
+            .fa-solid {
+                font-size: 30px;
+            }
+        }
+        .detailTitle {
+            font-size: 12px;
+        }
+        .detailLabel {
+            margin-top: -10px;
+            font-size: 20px;
+        }
+    }
+    
+    .descriptionSection {
+        width: 60%;
+        margin-top: -20px;
+        .postTime {
+            font-size: 15px;
+            color: #66676C;
+
+        }
+    }
+    .headingDetail {
+        font-size: 22px;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc; 
+        margin-bottom: 10px;
+        margin-left: -10px;
+        width: 82%;
+    }
+
+    .headingDetail:hover {
+        cursor: pointer;
+        color: blue;  
+    }
+
+    .heading {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .detailsSection {
+        width: 75%;
+
+        .detailName {
+            width: 30%;
+            color: #66676C;
+            
+        }
+        .col-md-6 {
+            border-bottom: 1px solid #ccc; 
+            margin-bottom: 10px;
+        }
+    }
+
+    .equipment_content {
+        .equipmentType {
+            border-bottom: 1px solid #ccc; 
+            margin-bottom: 10px;
+            width: 80%;
+            .fa-solid  {
+                font-size: 25px;
+                margin-right: 10px;
+            }
+        }
+        .equipmentType:hover {
+            cursor: pointer;
+        }
+
+        .equipmentContainer {
+            border-bottom: 2px solid #000000; 
+            margin-bottom: 10px;
+            width: 80%;
+            .fa-solid {
+                font-size: 20px;
+                padding: 8px;            
+            }
+            .fa-angle-down {
+                transition: transform 0.3s ease;
+            }
+
+            .fa-angle-up {
+                transition: transform 0.3s ease;
+                transform: rotate(180deg); /* Obróci strzałkę o 180 stopni */
+            }
+        }
+    }
+
+}

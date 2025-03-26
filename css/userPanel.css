@@ -1,0 +1,133 @@
+.userPanels {
+  margin-top: 50px;
+  width: 20%;
+}
+.userPanels .userMenu .menuItem {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+.userPanels .userMenu .menuItem:hover {
+  background: #0056b3;
+}
+.userPanels .userMenu .accountConfing {
+  margin-left: 20px;
+}
+
+.userInfo {
+  margin-top: 50px;
+  width: 60%;
+  height: 222px;
+}
+.userInfo .userPosts {
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+.userInfo .userPosts a {
+  text-decoration: none;
+  color: black;
+}
+.userInfo .userPosts .userPost img {
+  width: 180px;
+  height: 150px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.userInfo .userPosts .userPost .postDate {
+  padding: 10px;
+  width: 500px;
+}
+.userInfo .userPosts .userPost .postDate .postTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+.userInfo .userPosts .userPost .postDate .postPrice {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.userInfo .userPosts .userPost .postDate .postPublished {
+  margin-top: 35px;
+  font-size: 13px;
+  color: #66676C;
+}
+.userInfo .userPosts .userPost .postDate .postDelete form {
+  margin-left: 200px;
+}
+.userInfo .updateProfilSection form {
+  background-color: #6ab1fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 340px;
+}
+.userInfo .updateProfilSection form label {
+  padding: 5px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.userInfo .updateProfilSection form input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.userInfo .updateProfilSection form button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.userInfo .updateProfilSection form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .userPanels {
+    margin-top: 50px;
+    width: 70%;
+  }
+  .userPanels .userMenu {
+    display: flex;
+    height: 100px;
+  }
+  .userPanels .userMenu .menuItem {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 5px;
+  }
+  .userPanels .userMenu .accountConfing {
+    display: flex;
+    height: 100px;
+  }
+  .userPanels .userMenu .accountConfing a {
+    width: 70px;
+    margin-left: 1px;
+  }
+  .userInfo {
+    margin-top: -100px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .userPosts {
+    width: 10%;
+  }
+}/*# sourceMappingURL=userPanel.css.map */
