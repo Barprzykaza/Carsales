@@ -1,5 +1,7 @@
 # Carsales
-Fully responsive website, that allows users to list cars for sale. The project is based on a database for storing information about listings and users.
+A fully responsive website that allows users to list cars for sale. The project is based on a database for storing information about listings and users.
+It includes features such as user authentication, detailed car descriptions, image uploads, and a search/filter system to help buyers find the right vehicle.
+Designed for a smooth user experience on all devices.
 
 Project preview:
 
